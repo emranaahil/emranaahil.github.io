@@ -573,6 +573,27 @@ export function Home() {
                 <h2 className="ui-section text-text-primary">{t("nav_about")}</h2>
                 <p className="ui-body mt-2 text-text-secondary">{t("footer_blurb")}</p>
               </section>
+              <section id="faq" className="mt-10 max-w-2xl scroll-mt-20">
+                <h2 className="ui-section text-text-primary">{t("faq_title")}</h2>
+                <div className="mt-4 space-y-3">
+                  <article className="rounded-lg border border-border bg-surface p-4">
+                    <h3 className="text-sm font-semibold text-text-primary">{t("faq_q1")}</h3>
+                    <p className="ui-small mt-1 text-text-secondary">{t("faq_a1")}</p>
+                  </article>
+                  <article className="rounded-lg border border-border bg-surface p-4">
+                    <h3 className="text-sm font-semibold text-text-primary">{t("faq_q2")}</h3>
+                    <p className="ui-small mt-1 text-text-secondary">{t("faq_a2")}</p>
+                  </article>
+                  <article className="rounded-lg border border-border bg-surface p-4">
+                    <h3 className="text-sm font-semibold text-text-primary">{t("faq_q3")}</h3>
+                    <p className="ui-small mt-1 text-text-secondary">{t("faq_a3")}</p>
+                  </article>
+                  <article className="rounded-lg border border-border bg-surface p-4">
+                    <h3 className="text-sm font-semibold text-text-primary">{t("faq_q4")}</h3>
+                    <p className="ui-small mt-1 text-text-secondary">{t("faq_a4")}</p>
+                  </article>
+                </div>
+              </section>
             </>
           ) : (
             <ToolPageLayout

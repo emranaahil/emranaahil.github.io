@@ -1,0 +1,25 @@
+# Robots.txt for PDF Studio
+User-agent: *
+Allow: /
+
+# AI Crawlers explicitly allowed for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap Location
+Sitemap: https://emranaahil.github.io/sitemap.xml

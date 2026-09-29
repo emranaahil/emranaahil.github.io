@@ -209,5 +209,14 @@
   "set_password": "Set a password",
   "language": "Language",
   "merge_pick": "Add another PDF to merge",
-  "footer": "Your files stay on your device."
+  "footer": "Your files stay on your device.",
+  "faq_title": "Frequently Asked Questions",
+  "faq_q1": "Is PDF Studio completely free to use?",
+  "faq_a1": "Yes, PDF Studio is 100% free with no subscriptions, paywalls, or hidden charges.",
+  "faq_q2": "Are my PDF files uploaded to any external server?",
+  "faq_a2": "No. Your files never leave your browser. All PDF processing happens locally on your computer or device.",
+  "faq_q3": "What is the maximum file size supported?",
+  "faq_a3": "The maximum file size limit is 10 MB per PDF document to ensure fast and reliable in-browser memory execution.",
+  "faq_q4": "What tools does PDF Studio offer?",
+  "faq_a4": "PDF Studio provides PDF compression, merging multiple files, page rotation, signature drawing, password protection/unlocking, content redaction, page reordering/extraction, grayscale conversion, and document text editing."
 }

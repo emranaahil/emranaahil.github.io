@@ -209,5 +209,14 @@
   "set_password": "Establecer contraseña",
   "language": "Idioma",
   "merge_pick": "Añadir otro PDF para unir",
-  "footer": "Los archivos permanecen en este dispositivo."
+  "footer": "Los archivos permanecen en este dispositivo.",
+  "faq_title": "Preguntas frecuentes (FAQ)",
+  "faq_q1": "¿PDF Studio es completamente gratuito?",
+  "faq_a1": "Sí, PDF Studio es 100% gratuito, sin suscripciones ni costes ocultos.",
+  "faq_q2": "¿Mis archivos PDF se suben a algún servidor?",
+  "faq_a2": "No. Sus archivos nunca salen de su navegador. Todo el procesamiento se realiza localmente en su dispositivo.",
+  "faq_q3": "¿Cuál es el límite de tamaño de archivo?",
+  "faq_a3": "El límite máximo es de 10 MB por archivo PDF para garantizar un rendimiento óptimo en el navegador.",
+  "faq_q4": "¿Qué herramientas incluye PDF Studio?",
+  "faq_a4": "PDF Studio ofrece compresión, unión de varios archivos, rotación de páginas, firma digital, protección y desbloqueo con contraseña, ocultación de texto confidencial, reorganización de páginas, conversión a blanco y negro y edición de texto."
 }

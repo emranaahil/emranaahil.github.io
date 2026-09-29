@@ -6,10 +6,127 @@
     <meta name="theme-color" content="#F8FAFC" />
     <meta
       name="description"
-      content="Client-side PDF editor — view, edit, compress, lock, and merge PDFs in your browser. Files never leave your device."
+      content="PDF Studio — 100% Client-Side Browser PDF Editor. View, edit, compress, merge, split, sign, lock, and convert PDFs directly in your browser. No file uploads, maximum privacy."
     />
-    <title>PDF Studio — Browser PDF Editor</title>
+    <meta
+      name="keywords"
+      content="PDF editor, online PDF editor, free PDF editor, private PDF editor, compress PDF, merge PDF, edit PDF text, sign PDF, client-side PDF editor, PDF security, qpdf wasm"
+    />
+    <meta name="author" content="Md Imran" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://emranaahil.github.io/" />
+
+    <!-- Title -->
+    <title>PDF Studio — 100% Private Browser PDF Editor</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph (OG) Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://emranaahil.github.io/" />
+    <meta property="og:title" content="PDF Studio — 100% Private Browser PDF Editor" />
+    <meta
+      property="og:description"
+      content="Edit, compress, merge, split, sign, lock, and convert PDFs 100% in your browser. Files never leave your device."
+    />
+    <meta property="og:image" content="https://emranaahil.github.io/favicon.svg" />
+    <meta property="og:site_name" content="PDF Studio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PDF Studio — 100% Private Browser PDF Editor" />
+    <meta
+      name="twitter:description"
+      content="Edit, compress, merge, split, sign, lock, and convert PDFs 100% in your browser. Files never leave your device."
+    />
+    <meta name="twitter:image" content="https://emranaahil.github.io/favicon.svg" />
+
+    <!-- Structured Data (Schema.org JSON-LD for SEO & GEO AI Models) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://emranaahil.github.io/#webapp",
+            "url": "https://emranaahil.github.io/",
+            "name": "PDF Studio",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "All",
+            "browserRequirements": "Requires JavaScript and WebAssembly support",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "description": "100% client-side PDF editor and utility tool suite. View, edit, compress, merge, split, sign, protect, and convert PDF files directly inside the web browser with zero server uploads.",
+            "featureList": [
+              "Compress PDF files in browser",
+              "Merge multiple PDF documents",
+              "Rotate and reorder pages",
+              "Sign PDFs with custom signatures",
+              "Password protect and unlock PDFs",
+              "Redact and hide sensitive text",
+              "Extract pages and convert to grayscale",
+              "Text overlay and document editing"
+            ],
+            "author": {
+              "@type": "Person",
+              "name": "Md Imran",
+              "sameAs": "https://www.linkedin.com/in/md-imran-qa"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://emranaahil.github.io/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is PDF Studio?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "PDF Studio is a free, 100% client-side browser PDF editor and utility application. It allows users to edit, compress, merge, sign, rotate, split, protect, and convert PDF documents directly in their browser without sending files to any server."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are my PDF files uploaded to a server?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, your files never leave your browser. PDF Studio processes all PDF documents locally on your device using client-side libraries like PDF.js, pdf-lib, and qpdf-wasm. No backend or cloud uploads are used."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the maximum file size limit in PDF Studio?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The maximum file size limit for PDF Studio is 10 MB per file to ensure optimal in-browser performance and memory management."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What tools are included in PDF Studio?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "PDF Studio includes tools for compressing PDFs, merging multiple documents, rotating pages, signing PDFs, password protecting and unlocking PDFs, redacting sensitive text, organizing/deleting pages, converting PDFs to grayscale, and full document text editing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who developed PDF Studio?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "PDF Studio was created and developed by Md Imran."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="bg-background text-text-primary antialiased">
     <div id="root"></div>
