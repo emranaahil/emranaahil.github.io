@@ -1,11 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./i18n";
+import { bootLocale } from "./localeBoot";
 import "./index.css";
-import App from "./App";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+if (bootLocale()) {
+  void import("./i18n").then(async ({ localeReady }) => {
+    await localeReady;
+    const { default: App } = await import("./App");
+    createRoot(document.getElementById("root")!).render(
+      <StrictMode>
+        <App />
+      </StrictMode>
+    );
+  });
+}

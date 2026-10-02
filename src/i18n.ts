@@ -1,6 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
+import { applyDocumentMeta, installLocaleHistory, pushLanguageUrl, rememberLanguage } from "./lib/documentMeta";
+import { canonicalLang, decideLocale, type LangCode } from "./lib/localePath";
+import { detectRegionLanguage } from "./lib/regionLanguage";
 import en from "./locales/en/translation.json";
 import hi from "./locales/hi/translation.json";
 import mr from "./locales/mr/translation.json";
@@ -13,97 +15,38 @@ import ptBR from "./locales/pt-BR/translation.json";
 import vi from "./locales/vi/translation.json";
 import tl from "./locales/tl/translation.json";
 
-function detectRegionLanguage(): string | undefined {
+function initialLanguage(): string {
+  if (typeof window === "undefined") return "en";
+  let stored: string | null = null;
   try {
-    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
-    if (tz.includes("Kolkata") || tz.includes("Calcutta")) {
-      if (typeof navigator !== "undefined") {
-        const nav = (navigator.languages || [navigator.language]).join(",").toLowerCase();
-        if (nav.includes("mr")) return "mr";
-        if (nav.includes("bn")) return "bn";
-        if (nav.includes("te")) return "te";
-        if (nav.includes("ta")) return "ta";
-      }
-      return "hi";
-    }
-    if (tz.includes("Jakarta") || tz.includes("Makassar") || tz.includes("Jayapura")) {
-      return "id";
-    }
-    if (
-      tz.includes("Sao_Paulo") ||
-      tz.includes("Fortaleza") ||
-      tz.includes("Manaus") ||
-      tz.includes("Recife") ||
-      tz.includes("Belem") ||
-      tz.includes("Cuiaba")
-    ) {
-      return "pt-BR";
-    }
-    if (tz.includes("Ho_Chi_Minh") || tz.includes("Saigon") || tz.includes("Hanoi")) {
-      return "vi";
-    }
-    if (tz.includes("Manila")) {
-      return "tl";
-    }
-    if (
-      tz.includes("Madrid") ||
-      tz.includes("Canary") ||
-      tz.includes("Mexico") ||
-      tz.includes("Bogota") ||
-      tz.includes("Buenos_Aires") ||
-      tz.includes("Santiago") ||
-      tz.includes("Lima") ||
-      tz.includes("Caracas") ||
-      tz.includes("Montevideo") ||
-      tz.includes("Asuncion") ||
-      tz.includes("La_Paz") ||
-      tz.includes("Guayaquil") ||
-      tz.includes("Tegucigalpa") ||
-      tz.includes("Guatemala") ||
-      tz.includes("Managua") ||
-      tz.includes("San_Jose") ||
-      tz.includes("San_Salvador") ||
-      tz.includes("Panama") ||
-      tz.includes("Santo_Domingo") ||
-      tz.includes("Havana")
-    ) {
-      return "es";
-    }
+    stored = window.localStorage.getItem("i18nextLng");
   } catch {
-    /* fallback to browser language */
+    stored = null;
   }
-
-  if (typeof navigator !== "undefined") {
-    const langs = navigator.languages || [navigator.language];
-    for (const l of langs) {
-      const code = l?.toLowerCase();
-      if (code.startsWith("hi")) return "hi";
-      if (code.startsWith("mr")) return "mr";
-      if (code.startsWith("bn")) return "bn";
-      if (code.startsWith("te")) return "te";
-      if (code.startsWith("ta")) return "ta";
-      if (code.startsWith("id")) return "id";
-      if (code.startsWith("pt")) return "pt-BR";
-      if (code.startsWith("es")) return "es";
-      if (code.startsWith("vi")) return "vi";
-      if (code.startsWith("tl") || code.startsWith("fil")) return "tl";
-      if (code.startsWith("en")) return "en";
-    }
-  }
-
-  return "en";
+  return decideLocale({
+    pathname: window.location.pathname,
+    stored,
+    region: detectRegionLanguage(),
+  }).lang;
 }
 
-const detector = new LanguageDetector();
-detector.addDetector({
-  name: "regionDetector",
-  lookup() {
-    return detectRegionLanguage();
-  },
-});
+function messagesFor(lang: LangCode): Record<string, unknown> {
+  return (i18n.getResourceBundle(lang, "translation") as Record<string, unknown> | undefined) ?? {};
+}
 
-void i18n
-  .use(detector)
+function showLanguage(lang: LangCode) {
+  applyDocumentMeta(lang, messagesFor(lang));
+}
+
+/** Switch language in place. The PDF stays open. The URL becomes /hi/ or /. */
+export function selectLanguage(code: string) {
+  const lang = canonicalLang(code) ?? "en";
+  rememberLanguage(lang);
+  pushLanguageUrl(lang);
+  void i18n.changeLanguage(lang).then(() => showLanguage(lang));
+}
+
+export const localeReady = i18n
   .use(initReactI18next)
   .init({
     resources: {
@@ -119,12 +62,18 @@ void i18n
       vi: { translation: vi },
       tl: { translation: tl },
     },
+    lng: initialLanguage(),
     fallbackLng: "en",
     interpolation: { escapeValue: false },
-    detection: {
-      order: ["localStorage", "regionDetector", "navigator"],
-      caches: ["localStorage"],
-    },
+    react: { useSuspense: false },
+  })
+  .then(() => {
+    const lang = canonicalLang(i18n.resolvedLanguage || i18n.language) ?? "en";
+    showLanguage(lang);
+    installLocaleHistory((next) => {
+      rememberLanguage(next);
+      void i18n.changeLanguage(next).then(() => showLanguage(next));
+    });
   });
 
 export default i18n;

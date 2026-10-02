@@ -1,9 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://emranaahil.github.io/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/hi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/mr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/bn/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/te/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/ta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/id/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/pt-BR/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://emranaahil.github.io/tl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emranaahil.github.io/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://emranaahil.github.io/hi/" />
+    <xhtml:link rel="alternate" hreflang="mr" href="https://emranaahil.github.io/mr/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://emranaahil.github.io/bn/" />
+    <xhtml:link rel="alternate" hreflang="te" href="https://emranaahil.github.io/te/" />
+    <xhtml:link rel="alternate" hreflang="ta" href="https://emranaahil.github.io/ta/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://emranaahil.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://emranaahil.github.io/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://emranaahil.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://emranaahil.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="tl" href="https://emranaahil.github.io/tl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emranaahil.github.io/" />
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

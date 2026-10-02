@@ -22,6 +22,5 @@
       "@qpdf-engine": ["node_modules/@jspawn/qpdf-wasm/qpdf.js"]
     }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"]
 }

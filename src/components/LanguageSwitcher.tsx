@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { canonicalLang } from "../lib/localePath";
+import { selectLanguage } from "../i18n";
 import { Icon } from "./Icon";
 
 const LANGS = [
@@ -17,7 +19,7 @@ const LANGS = [
 
 export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
   const { i18n, t } = useTranslation();
-  const current = i18n.resolvedLanguage ?? i18n.language?.slice(0, 2) ?? "en";
+  const current = canonicalLang(i18n.resolvedLanguage || i18n.language) ?? "en";
 
   return (
     <div className="relative inline-flex items-center">
@@ -26,7 +28,7 @@ export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
         <span className="sr-only">{t("language")}</span>
         <select
           value={current}
-          onChange={(e) => void i18n.changeLanguage(e.target.value)}
+          onChange={(e) => selectLanguage(e.target.value)}
           className="cursor-pointer appearance-none bg-transparent pr-4 font-semibold text-text-primary focus:outline-none"
           aria-label={t("language")}
         >
