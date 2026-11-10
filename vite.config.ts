@@ -15,6 +15,9 @@ const permissionsPolicy =
 const productionCsp =
   "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; child-src 'self' blob:; upgrade-insecure-requests";
 
+const devCsp =
+  "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' ws: wss:; worker-src 'self' blob:; child-src 'self' blob:; upgrade-insecure-requests";
+
 const securityHeaders = {
   "X-Frame-Options": "DENY",
   "X-Content-Type-Options": "nosniff",
@@ -31,8 +34,8 @@ const securityHeaders = {
 
 /**
  * GitHub Pages does not send public/_headers.
- * These three can be enforced from the document. X-Frame-Options and
- * X-Content-Type-Options cannot. Dev HTML stays free of CSP so Vite HMR works.
+ * These security headers can be enforced or recognized from document meta tags.
+ * Dev HTML uses devCsp so Vite HMR works.
  */
 function localizedPagesPlugin(projectRoot: string): Plugin {
   let wrote = false;
@@ -52,15 +55,35 @@ function localizedPagesPlugin(projectRoot: string): Plugin {
 function securityMetaPlugin(): Plugin {
   return {
     name: "security-meta",
-    apply: "build",
-    transformIndexHtml(html) {
-      if (html.includes("http-equiv=\"Content-Security-Policy\"")) return html;
-      const tags = [
-        `<meta http-equiv="Content-Security-Policy" content="${productionCsp}" />`,
-        `<meta name="referrer" content="no-referrer" />`,
-        `<meta http-equiv="Permissions-Policy" content="${permissionsPolicy}" />`,
-      ].join("\n    ");
-      return html.replace("<head>", `<head>\n    ${tags}`);
+    transformIndexHtml(html, ctx) {
+      const isDev = Boolean(ctx.server);
+      const csp = isDev ? devCsp : productionCsp;
+
+      if (html.includes('http-equiv="Content-Security-Policy"')) {
+        html = html.replace(
+          /<meta\s+http-equiv=["']Content-Security-Policy["']\s+content=["'][^"']*["']\s*\/?>/i,
+          `<meta http-equiv="Content-Security-Policy" content="${csp}" />`,
+        );
+      } else {
+        html = html.replace("<head>", `<head>\n    <meta http-equiv="Content-Security-Policy" content="${csp}" />`);
+      }
+
+      if (!html.includes('http-equiv="X-Frame-Options"')) {
+        html = html.replace("<head>", `<head>\n    <meta http-equiv="X-Frame-Options" content="DENY" />`);
+      }
+      if (!html.includes('http-equiv="X-Content-Type-Options"')) {
+        html = html.replace("<head>", `<head>\n    <meta http-equiv="X-Content-Type-Options" content="nosniff" />`);
+      }
+      if (!html.includes('name="referrer"')) {
+        html = html.replace("<head>", `<head>\n    <meta name="referrer" content="no-referrer" />`);
+      }
+      if (!html.includes('http-equiv="Referrer-Policy"')) {
+        html = html.replace("<head>", `<head>\n    <meta http-equiv="Referrer-Policy" content="no-referrer" />`);
+      }
+      if (!html.includes('http-equiv="Permissions-Policy"')) {
+        html = html.replace("<head>", `<head>\n    <meta http-equiv="Permissions-Policy" content="${permissionsPolicy}" />`);
+      }
+      return html;
     },
   };
 }
