@@ -4,7 +4,7 @@ export const ORIGIN = "https://emranaahil.github.io";
 
 export const ENGLISH_TITLE = "PDF Studio — 100% Private Browser PDF Editor";
 export const ENGLISH_DESCRIPTION =
-  "PDF Studio — 100% Client-Side Browser PDF Editor. View, edit, compress, merge, split, sign, lock, and convert PDFs directly in your browser. No file uploads, maximum privacy.";
+  "Free, 100% private browser PDF editor. Edit text, compress, merge, split, sign, and protect PDF files locally on your device with zero server uploads.";
 export const ENGLISH_OG_DESCRIPTION =
   "Edit, compress, merge, split, sign, lock, and convert PDFs 100% in your browser. Files never leave your device.";
 export const ENGLISH_KEYWORDS =

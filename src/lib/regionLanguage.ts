@@ -1,5 +1,13 @@
 /** Timezone and browser language. Same rules the site already used before language URLs. */
 export function detectRegionLanguage(): string {
+  // Respect explicit browser English preference before applying regional timezone defaults.
+  if (typeof navigator !== "undefined") {
+    const primary = (navigator.languages?.[0] || navigator.language || "").toLowerCase();
+    if (primary.startsWith("en")) {
+      return "en";
+    }
+  }
+
   try {
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
     if (tz.includes("Kolkata") || tz.includes("Calcutta")) {
